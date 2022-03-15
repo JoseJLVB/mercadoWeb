@@ -1,0 +1,20 @@
+{% extends 'layout.html' %}
+{% from 'fruit_macro.html' import fruit_card  %}
+
+{% block title %}Mercado Web{% endblock %}
+
+{% block container %}
+  <h1 class="text-center">Bienvenido al Mercado WEB, selecciones sus productos</h1>
+  <div class="row">
+    {% for fruit in fruits %}
+      {{ fruit_card(fruit) }}
+    {% endfor %}
+  </div>
+  
+{% endblock %}
+
+{% block scripts %}
+<script>
+  console.log('Llegó desde el mercado')
+</script>
+{% endblock %}

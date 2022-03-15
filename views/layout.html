@@ -1,0 +1,30 @@
+{% from 'fruit_macro.html' import fruit_card  %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Mercado Web</title>
+</head>
+<body>
+    <nav class="navbar navbar-light bg-success">
+        <div class="container">
+            <a class="navbar-brand mx-auto" href="#">
+                <img src="/carrito.png" alt="" width="30" height="24" >
+            </a>
+        </div>
+    </nav>
+    <div class="container">
+        {% block container %}
+        <h1>ERROR. ESTE HTML NO SIRVE</h1>
+        {% endblock %}
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    {% block scripts %}{% endblock %}
+</body>
+</html>

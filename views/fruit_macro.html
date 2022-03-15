@@ -1,0 +1,12 @@
+{% macro fruit_card(fruit)  %}
+<div class="col-4">
+  <div class="card" style="width: 18rem;">
+    <img src="/{{ fruit.img }}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title"> {{ fruit.nombre }} </h5>
+      <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+    </div>
+  </div>
+</div>
+{% endmacro %}
+
